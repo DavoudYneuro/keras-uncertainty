@@ -49,7 +49,7 @@ if backend == "tfkeras":
     from .tfkeras_backend import *
 
 #For now implement einsum for tensorflow only
-from tensorflow import einsum
+from torch import einsum
 
 #Expose local copy of conv_utils
 from . import conv_utils
