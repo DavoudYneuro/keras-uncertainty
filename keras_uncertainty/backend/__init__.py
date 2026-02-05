@@ -3,7 +3,7 @@ import os
 import json
 
 CONFIG_FILE = "config.json"
-DEFAULT_BACKEND = "keras"
+DEFAULT_BACKEND = "torch"
 DEFAULT_CONFIG = {
     "backend": DEFAULT_BACKEND
 }
