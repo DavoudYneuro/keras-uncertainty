@@ -3,7 +3,7 @@ import os
 import json
 
 CONFIG_FILE = "config.json"
-DEFAULT_BACKEND = "torch"
+DEFAULT_BACKEND = "keras"
 DEFAULT_CONFIG = {
     "backend": DEFAULT_BACKEND
 }
@@ -49,7 +49,7 @@ if backend == "tfkeras":
     from .tfkeras_backend import *
 
 #For now implement einsum for tensorflow only
-from torch import einsum
+from tensorflow import einsum
 
 #Expose local copy of conv_utils
 from . import conv_utils
